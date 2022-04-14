@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="product_product_view_form" model="ir.ui.view">
+            <field name="name">product.product.view.form.inherit.ww_product_dimensions</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <div name="weight" position="after">
+                    <label for="length" string="Dimensions"/>
+                    <div name="dimensions">
+                        <field name="length" style="width:65px;" placeholder="Length"/>
+                        <field name="width" style="width:65px;" placeholder="Width"/>
+                        <field name="height" style="width:65px;" placeholder="Height"/>
+                    </div>
+                </div>
+            </field>
+        </record>
+
+        <record id="product_product_easy_view_form" model="ir.ui.view">
+            <field name="name">product.product.easy.view.form.inherit.ww_product_dimensions</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+            <field name="arch" type="xml">
+                <group name="weight" position="after">
+                    <label for="length" string="Dimensions"/>
+                    <div name="dimensions">
+                        <field name="length" style="width:65px;" placeholder="Length"/>
+                        <field name="width" style="width:65px;" placeholder="Width"/>
+                        <field name="height" style="width:65px;" placeholder="Height"/>
+                    </div>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>
