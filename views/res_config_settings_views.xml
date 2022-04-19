@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.ww_product_dimensions</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="product.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='product_general_settings']" position="after">
+                <div class="row mt16 o_settings_container" id="ww_product_dimensions_settings">
+                    <div class="col-12 col-lg-6 o_setting_box" id="ww_product_dimensions_uom_category">
+                        <div class="o_setting_left_pane">
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="ww_product_dimensions_uom_category" string="Dimensions UoM category"/>
+                            <div class="text-muted">
+                                Define product dimensions unit of measure category
+                            </div>
+                            <div class="content-group">
+                                <div class="mt16">
+                                    <field name="ww_product_dimensions_uom_category" />
+                                </div>
+                            </div>
+                            <label for="ww_product_dimensions_uom" string="Dimensions UoM"/>
+                            <div class="text-muted">
+                                Define your dimensions unit of measure
+                            </div>
+                            <div class="content-group">
+                                <div class="mt16">
+                                    <field name="ww_product_dimensions_uom" domain="[('category_id', '=', ww_product_dimensions_uom_category)]"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

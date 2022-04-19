@@ -7,11 +7,20 @@
             <field name="inherit_id" ref="product.product_normal_form_view"/>
             <field name="arch" type="xml">
                 <div name="weight" position="after">
-                    <label for="length" string="Dimensions"/>
-                    <div name="dimensions">
-                        <field name="length" style="width:65px;" placeholder="Length"/>
-                        <field name="width" style="width:65px;" placeholder="Width"/>
-                        <field name="height" style="width:65px;" placeholder="Height"/>
+                    <label for="ww_length"/>
+                    <div class="o_row" name="ww_length">
+                        <field name="ww_length" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
+                    </div>
+                    <label for="ww_width"/>
+                    <div class="o_row" name="ww_width">
+                        <field name="ww_width" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
+                    </div>
+                    <label for="ww_height"/>
+                    <div class="o_row" name="ww_height">
+                        <field name="ww_height" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
                     </div>
                 </div>
             </field>
@@ -23,11 +32,20 @@
             <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
             <field name="arch" type="xml">
                 <group name="weight" position="after">
-                    <label for="length" string="Dimensions"/>
-                    <div name="dimensions">
-                        <field name="length" style="width:65px;" placeholder="Length"/>
-                        <field name="width" style="width:65px;" placeholder="Width"/>
-                        <field name="height" style="width:65px;" placeholder="Height"/>
+                    <label for="ww_length"/>
+                    <div class="o_row" name="ww_length">
+                        <field name="ww_length" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
+                    </div>
+                    <label for="ww_width"/>
+                    <div class="o_row" name="ww_width">
+                        <field name="ww_width" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
+                    </div>
+                    <label for="ww_height"/>
+                    <div class="o_row" name="ww_height">
+                        <field name="ww_height" />
+                        <span><field name="ww_dimensions_uom_name"/></span>
                     </div>
                 </group>
             </field>
