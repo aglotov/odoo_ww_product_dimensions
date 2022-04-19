@@ -10,17 +10,22 @@
                     <label for="ww_length"/>
                     <div class="o_row" name="ww_length">
                         <field name="ww_length" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
                     </div>
                     <label for="ww_width"/>
                     <div class="o_row" name="ww_width">
                         <field name="ww_width" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
                     </div>
                     <label for="ww_height"/>
                     <div class="o_row" name="ww_height">
                         <field name="ww_height" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
+                    </div>
+                    <label for="ww_area"/>
+                    <div class="o_row" name="ww_areaa">
+                        <field name="ww_area" />
+                        <span><field name="ww_area_uom_name"/></span>
                     </div>
                 </div>
             </field>
@@ -35,17 +40,22 @@
                     <label for="ww_length"/>
                     <div class="o_row" name="ww_length">
                         <field name="ww_length" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
                     </div>
                     <label for="ww_width"/>
                     <div class="o_row" name="ww_width">
                         <field name="ww_width" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
                     </div>
                     <label for="ww_height"/>
                     <div class="o_row" name="ww_height">
                         <field name="ww_height" />
-                        <span><field name="ww_dimensions_uom_name"/></span>
+                        <span><field name="ww_length_uom_name"/></span>
+                    </div>
+                    <label for="ww_area"/>
+                    <div class="o_row" name="ww_area">
+                        <field name="ww_area" />
+                        <span><field name="ww_area_uom_name"/></span>
                     </div>
                 </group>
             </field>
